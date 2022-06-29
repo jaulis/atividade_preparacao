@@ -2,28 +2,28 @@
 
 int main(){
 	
-	int i=1,continua,QtdF,AlunoC=0;
-	float SalaMin,RendF,RendPC;
+	int i=1,continua,qtdF,alunoC=0;
+	float salaMin,rendF,rendPC;
 	
 	printf("Escreva o salario minimo: \n");
-	scanf("%f",&SalaMin);
+	scanf("%f",&salaMin);
 	
 	
 	do{
 		
 		printf("Escreva a renda familiar da familia [%d]: \n",i);
-		scanf("%f",&RendF);
+		scanf("%f",&rendF);
 		
 		printf("Escreva a quantidade de pessoas q moram com a familia [%d]: \n",i);
-		scanf("%d",&QtdF);
+		scanf("%d",&qtdF);
 		
-		RendPC = RendF/QtdF;
+		rendPC = rendF/qtdF;
 		
-		if(RendPC < (SalaMin/2)){
+		if(rendPC < (salaMin/2)){
 			
 			printf("A familia do Aluno [%d] recebera auxilio.",i);
 			
-			AlunoC++;
+			alunoC++;
 		}
 		
 		i++;
@@ -33,7 +33,7 @@ int main(){
 		
 	}while(continua!=0);
 	
-	printf("A quantidade de alunos q recebera auxilio sera de: %d",AlunoC);
+	printf("A quantidade de alunos q recebera auxilio sera de: %d",alunoC);
 		
 	return 0;
 }
